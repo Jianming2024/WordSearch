@@ -18,7 +18,7 @@ public class WordListAccess {
     public WordListAccess() {
         try
         {
-            Scanner fileReader = new Scanner(ListFile);
+            Scanner fileReader = new Scanner(ListFile,"ISO-8859-1");
             while (fileReader.hasNextLine())
             {
                 String line = fileReader.nextLine();
